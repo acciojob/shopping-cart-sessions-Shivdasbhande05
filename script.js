@@ -39,9 +39,12 @@ function renderProducts() {
 function renderCart() {
   cartList.innerHTML=""; // clear exxisting cart
 
+<<<<<<< HEAD
+=======
   if(cart.length === 0){
     cartList.innerHTML = "to be Empty"
   } else {
+>>>>>>> a5a283346710fc4cda8c14dc2c42008837375a23
     cart.forEach((item,index) => {
       const li = document.createElement("li");
       li.innerHTML = `${item.name}-$${item.price} <button class="remove-from-cart-btn" data-id="${index}">Remove</button>`
@@ -56,9 +59,6 @@ function renderCart() {
       removeFromCart(itemIndex);
     });
   });
-
-    
-  }
 
 }
 
@@ -83,7 +83,7 @@ function addToCart(productId) {
 
 // Remove item from cart
 function removeFromCart(itemIndex) {
-  cart.splice(itemIndex,1);
+  cart = cart.filter((item) => item.id !== itemIndex);
   sessionStorage.setItem("cart",JSON.stringify(cart));
   renderCart();
 }
