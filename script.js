@@ -1,5 +1,5 @@
 // This is the boilerplate code given for you
-// You can modify this code.
+// You can modify this code
 // Product data
 const products = [
   { id: 1, name: "Product 1", price: 10 },
@@ -39,12 +39,9 @@ function renderProducts() {
 function renderCart() {
   cartList.innerHTML=""; // clear exxisting cart
 
-<<<<<<< HEAD
-=======
   if(cart.length === 0){
-    cartList.innerHTML = "to be Empty"
+    cartList.innerHTML = "Your cart is empty!"
   } else {
->>>>>>> a5a283346710fc4cda8c14dc2c42008837375a23
     cart.forEach((item,index) => {
       const li = document.createElement("li");
       li.innerHTML = `${item.name}-$${item.price} <button class="remove-from-cart-btn" data-id="${index}">Remove</button>`
@@ -60,6 +57,7 @@ function renderCart() {
     });
   });
 
+}
 }
 
 // Add item to cart
