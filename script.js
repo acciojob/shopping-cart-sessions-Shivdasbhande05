@@ -1,5 +1,5 @@
 // This is the boilerplate code given for you
-// You can modify this code
+// You can modify this code.
 // Product data
 const products = [
   { id: 1, name: "Product 1", price: 10 },
