@@ -72,11 +72,12 @@ function addToCart(productId) {
 
     if(cartItemIndex === -1){
       cart.push(product);
-    }
-
-    sessionStorage.setItem("cart",JSON.stringify(cart));
+		sessionStorage.setItem("cart",JSON.stringify(cart));
 
     renderCart();
+    }
+
+    
   }
 }
 
