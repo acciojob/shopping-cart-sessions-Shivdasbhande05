@@ -40,7 +40,7 @@ function renderCart() {
   cartList.innerHTML=""; // clear exxisting cart
 
   if(cart.length === 0){
-    cartList.innerHTML = "Your cart is empty!"
+    cartList.innerHTML = "to be Empty"
   } else {
     cart.forEach((item,index) => {
       const li = document.createElement("li");
